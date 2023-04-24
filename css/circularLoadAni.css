@@ -1,0 +1,39 @@
+body {
+  background: #1c1821;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: #ff6f61;
+}
+
+#wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* bottom: 0; */
+  overflow: hidden;
+}
+
+#wrap canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 500px;
+  margin: -250px 0 0 -250px;
+  -outline: 1px solid #fff;
+}
+
+.info {
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 50;
+  font-size: 15px;
+  color: #ccc;
+  line-height: 2em;
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Check Box</title>
+  </head>
+
+  <body>
+    <a href="../index.html">-= Back =-</a>
+    <hr />
+
+    <input type="checkbox" id="chBox" /> Check (res in console)
+
+    <!-- <input type="checkbox" id="chBox" onclick="myFunction()" /> -->
+
+    <!-- <p id="text" style="display: none">Checkbox is CHECKED!</p> -->
+
+    <script>
+      chBox.checked=!0;
+
+      // const chBox=document.getElementById('chBox')
+      chBox.addEventListener("click", () => {
+        if (chBox.checked == true) console.log("true");
+        else console.log("false");
+      });
+      // chBox.addEventListener("click", myFunction);
+
+      // function myFunction() {
+        // var checkBox = document.getElementById("myCheck");
+        // var text = document.getElementById("text");
+
+        // if (chBox.checked == true) text.style.display = "block";
+        // else text.style.display = "none";
+
+      //   if (chBox.checked == true) console.log("true");
+      //   else console.log("false");
+      // }
+    </script>
+  </body>
+</html>

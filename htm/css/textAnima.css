@@ -1,0 +1,125 @@
+/* body{ */
+/* ff:Lato */
+/* fz15 */
+/* bgc d8ecf2 */
+/* colo ff6f61 */
+/* } */
+
+.container {
+  margin: 0 auto;
+  width: 350px;
+  max-width: 350px;
+}
+
+h2 {
+  padding: 1.8rem 0;
+  font-size: 2.8rem;
+  text-shadow: 0 1px 1px #ff6f61; /* repeat */
+}
+
+nav {
+  flex: auto;
+  /* -webkit-box-flex */
+  /* -webkit-flex */
+  /* -ms-flex */
+  position: relative;
+  padding: 0.6125rem 0.6125rem 1.6125rem;
+}
+
+li a {
+  text-decoration: none;
+  color: rgba (67, 83, 99, 1); /*1?*/
+  cursor: zoom-in;
+  /* cursor: -webkit-zoom-in; */
+}
+
+ul.hover a {
+  opacity: 0.8;
+  transform: scale(0.97);
+  /* -webkit-transform: scale(0.97); */
+}
+
+ul a {
+  display: block;
+  position: relative;
+  padding: 0.75rem 1rem 1rem;
+  transition: transform 0.22s, box-shadow 0.22s;
+  /* -webkit-transition: transform .22s,box-shadow .22s; */
+  user-select: none;
+  /*  -webkit-user-select,-moz-user-select,-ms-user-select*/
+  box-shadow: 0 0 0 -0.25rem rgba(231, 224, 244, 0.1);
+}
+
+ul a:focus,
+ul a :hover {
+  outline: 0;
+  box-shadow: 0 0.5rem 0 -0.25rem rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transform: scale(1.03);
+  /* -webkit-transform ...*/
+
+  transition: transform 0.088s, bos-shadow 0.088s;
+  /* -webkit-transition: -webkit-transform ... */
+  z-index: 1;
+}
+
+.menu a:nth-child(1) {
+  background-color: #95c5db; /*bg...*/
+}
+
+.menu a:nth-child(2) {
+  background-color: #94c1db; /*bg...*/
+}
+
+.menu a:nth-child(3) {
+  background-color: #94bddb; /*bg...*/
+}
+/* ----------- */
+.menu a:nth-child(6):hover {
+  cursor: pointer;
+}
+
+.animated {
+  animation-timing-function: 1s; /*-webkit-anima...*/
+  animation-fill-mode: both; /*??? -webkit-anima */
+}
+
+/* @-webkit-keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate(90deg); 
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate(-10deg); 
+  }
+  70% {
+    transform: perspective(400px) rotate(10deg); 
+  }
+  100% {
+    transform: perspective(400px) rotate(0deg); 
+    opacity: 1;
+  }
+} */
+/*+ -webkit..., -ms... in every frame*/
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate(90deg); /*-webkit..., -ms... */
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate(-10deg); /*-webkit..., -ms... */
+  }
+  70% {
+    transform: perspective(400px) rotate(10deg); /*-webkit..., -ms... */
+  }
+  100% {
+    transform: perspective(400px) rotate(0deg); /*-webkit..., -ms... */
+    opacity: 1;
+  }
+}
+
+.flipInX {
+  backface-visibility: visible !important; /*-webkit-...,-ms-...*/
+  animation-name: flipInX; /*-webkit...*/
+}
